@@ -1,0 +1,268 @@
+/* 마이페이지 */
+.mypage-container {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Cafe24 Dongdong';
+}
+
+/* Cafe ChuChu 로고 */
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 52.51px;
+    height: 22.34px;
+    cursor: pointer;
+}
+
+/* 프로필 사진 (동그라미) */
+.profile-picture {
+    position: absolute;
+    left: 125px;
+    top: 69px;
+    width: 140px;
+    height: 140px;
+    background: url(../assets/images/cafe_chuchu_profile.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid #674D42;
+    cursor: pointer;
+}
+
+/* 아이디 */
+.mypage-id {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 224px;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+/* 가로선 */
+.line1 {
+    position: absolute;
+    height: 1px;
+    width: 334px;
+    background-color: #674D42;
+    left: 28px;
+    top: 271.04px;
+}
+
+.line2 {
+    position: absolute;
+    height: 1px;
+    width: 334px;
+    background-color: #674D42;
+    left: 28px;
+    top: 340.04px;
+}
+
+/* 찜 목록 연결 */
+.wishlist-icon {
+    position: absolute;
+    left: 33px;
+    top: 290px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.wishlist-linkname {
+    position: absolute;
+    left: 71px;
+    top: 292px;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* 내 프로필 */
+.myprofile-icon {
+    position: absolute;
+    left: 33px;
+    top: 359px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.myprofile {
+    position: absolute;
+    left: 71px;
+    top: 361px;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* 프로필 수정 링크 */
+.profilemodify-link {
+    position: absolute;
+    left: 286px;
+    top: 364px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #878787;
+    cursor: pointer;
+}
+
+/* 프로필 세부사항 - 이름 */
+.profile-title_name {
+    position: absolute;
+    top: 412px;
+    left: 33px;
+    font-size: 20px;
+    color: #878787;
+}
+
+.myprofile-line1 {
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #B5B5B5;
+    left: 81px;
+    top: 416px;
+}
+
+.profile-details_name {
+    position: absolute;
+    top: 412px;
+    left: 96px;
+    font-size: 22px;
+    color: #000000;
+}
+
+.gender-icon {
+    position: absolute;
+    left: 160px;
+    top: 411px;
+    width: 25px;
+    height: 25px;
+}
+
+/* 프로필 세부사항 - 전화번호 */
+.profile-title_phone {
+    position: absolute;
+    top: 463px;
+    left: 33px;
+    font-size: 20px;
+    color: #878787;
+}
+
+.myprofile-line2 {
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #B5B5B5;
+    left: 116px;
+    top: 467px;
+}
+
+.profile-details_phone {
+    position: absolute;
+    top: 463px;
+    left: 131px;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* 프로필 세부사항 - 이메일 */
+.profile-title_email {
+    position: absolute;
+    top: 514px;
+    left: 33px;
+    font-size: 20px;
+    color: #878787;
+}
+
+.myprofile-line3 {
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #B5B5B5;
+    left: 101px;
+    top: 518px;
+}
+
+.profile-details_email {
+    position: absolute;
+    top: 514px;
+    left: 116px;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* 프로필 세부사항 - 선호하는 키워드 순위 */
+.profile-title_preferences {
+    position: absolute;
+    top: 565px;
+    left: 33px;
+    font-size: 20px;
+    color: #878787;
+}
+
+.profile-details_preferences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 30px;
+    padding-top: 600px;
+}
+  
+.preference-item {
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1.5px solid #674D42;
+    border-radius: 35px;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #000000;
+    background-color: #ffffff;
+    cursor: default;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* 프로필 세부사항 - 직업 */
+.profile-title_job {
+    position: absolute;
+    top: 616px;
+    left: 33px;
+    font-size: 20px;
+    color: #878787;
+}
+
+.myprofile-line5 {
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background-color: #B5B5B5;
+    left: 116px;
+    top: 620px;
+}
+
+.profile-details_job {
+    position: absolute;
+    top: 616px;
+    left: 131px;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* 로그아웃 */
+.logout {
+    position: absolute;
+    left: 171px;
+    top: 800px;
+    font-size: 15px;
+    text-align: center;
+    color: #878787;
+    cursor: pointer;
+}

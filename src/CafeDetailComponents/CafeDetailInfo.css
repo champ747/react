@@ -1,0 +1,122 @@
+.cafe-detail-info {
+  font-family: 'Cafe24 Dongdong', sans-serif;
+  line-height: 1.5;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-address-title {
+  position: absolute;
+  left: 27px;
+  top: 487px;
+  font-size: 20px;
+  color: #878787;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.info-line1 {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #B5B5B5;
+  left: 114px;
+  top: 494px;
+}
+
+.info-keyword-title {
+  position: absolute;
+  left: 27px;
+  top: 581px;
+  font-size: 20px;
+  color: #878787;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.info-line2 {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #B5B5B5;
+  left: 133px;
+  top: 588px;
+}
+
+.info-sns-title {
+  position: absolute;
+  left: 27px;
+  top: 684px;
+  font-size: 20px;
+  color: #878787;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.info-line3 {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: #B5B5B5;
+  left: 78px;
+  top: 691px;
+}
+
+.info-address {
+  position: absolute;
+  left: 129px;
+  top: 487px;
+  font-size: 20px;
+  color: #000000;
+  word-wrap: break-word;
+  width: 250px;
+}
+
+.info-keywords {
+  display: flex;
+  gap: 10px;
+  padding-left: 150px;
+  padding-top: 80px;
+  flex-direction: column; 
+}
+
+.keyword-item {
+  padding: 3px 10px;
+  border: 1px solid #674D42;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  color: #000000;
+  cursor: default;
+  width: fit-content;
+}
+
+.info-sns {
+  position: absolute;
+  left: 93px;
+  top: 684px;
+  font-size: 20px;
+  color: #000000;
+  word-wrap: break-word;
+  width: 270px;
+}
+
+.info-sns-link {
+  position: absolute;
+  left: 93px;
+  top: 684px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none; /* 기본 밑줄 제거 */
+  word-wrap: break-word;
+  width: 270px;
+}
+
+.info-sns-link:hover {
+  color: #674D42; /* 호버 시 색상 변경 */
+  text-decoration: underline; /* 호버 시 밑줄 표시 */
+}

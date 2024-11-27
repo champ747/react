@@ -1,0 +1,195 @@
+/* 검색 결과 페이지 */
+.search-results-container {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: 'Cafe24 Dongdong';
+}
+
+/* 로고 스타일 */
+.search-results-logo {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 52.51px;
+  height: 22.34px;
+  cursor: pointer;
+}
+
+/* 메뉴 아이콘 */
+.search-results_menu-icon {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 348px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* 키워드 선택하기 & 챗봇 검색 버튼 */
+.search-results-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 16px;
+  padding-left: 28px;
+}
+
+.keyword-search-button,
+.chatbot-search-button {
+  background-color: #ffffff;
+  border: 2px solid #674D42;
+  border-radius: 20px;
+  font-size: 17px;
+  color: #000000;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-family: 'Cafe24 Dongdong';
+}
+
+.keyword-search-button:hover,
+.chatbot-search-button:hover {
+  background-color: #674D42;
+  color: #ffffff;
+}
+
+.cresults-error-message {
+  position: fixed; /* 화면에 고정 */
+  top: 0px;
+  left: 50%;
+  transform: translateX(-70%);
+  color: #FF3B30; 
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Cafe24 Dongdong';
+  z-index: 1000;
+  margin: 0px;
+}  
+
+/* 카페 리스트 스타일 */
+.search-results-items {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.search-results-box {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #674D42;
+  width: 354px;
+  height: 110px;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  margin-left: 18px;
+  background-color: #FFFFFF;
+}
+
+/* 카페 이미지 컨테이너 - 기본 회색 */
+.search-results-image-container {
+  width: 127px;
+  height: 110px;
+  background-color: #B5B5B5;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-results-cafe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-results-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  color: #000000;
+  position: relative;
+}
+
+/* 카페 이름 */
+.search-results-info-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* 별점 아이콘 및 리뷰 수 */
+.search-results-star-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.search-results-info-rating {
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+.search-results-info-review {
+  font-size: 15px;
+  margin-left: 4px;
+  color: #878787;
+  display: inline;
+}
+
+/* 카페 상태 */
+.search-results-info-status_open {
+  font-size: 15px;
+  color: #000000;
+}
+
+.search-results-info-status_close {
+  font-size: 15px;
+  color: #FF3B30;
+}
+
+/* 위치 및 거리 정보 */
+.search-results-info-location {
+  font-size: 15px;
+  color: #878787;
+}
+
+.search-results-info-distance {
+  font-size: 15px;
+  color: #878787;
+}
+
+/* 아이콘 스타일 */
+.search-results-icons {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  display: flex;
+  gap: 0px;
+}
+
+.search-results-icon-share {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-results-icon-heart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.search-results-line {
+  width: 1px;
+  height: 10px;
+  background: #B5B5B5;
+  margin: 0 6px;
+}

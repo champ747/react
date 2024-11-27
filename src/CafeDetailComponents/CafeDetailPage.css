@@ -1,0 +1,155 @@
+.cafe-detail-container {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: 'Cafe24 Dongdong';
+}
+
+.back-button {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 11px;
+  z-index: 100;
+  font-family: 'Cafe24 Dongdong';
+  background: none;
+  border: none;
+  padding: 0px;
+}
+
+/* 카페 이미지 */
+.cafedetail-titleimage-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 390px;
+  height: 307px;
+  background-color: #B5B5B5;
+}
+
+.cafedetail-titleimag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 카페 이름 */
+.cafedetail-name {
+  font-size: 35px;
+  position: absolute;
+  top: 326px;
+  left: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 270px; 
+}
+
+.cafedetail-name .long-text {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: scrollLeft 10s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+      transform: translateX(00);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* 별점 및 리뷰 수 */
+.cafedetail-rating {
+  font-size: 20px;
+  position: absolute;
+  top: 375px;
+  left: 47px;
+}
+
+.cafedetail-review {
+  font-size: 20px;
+  position: absolute;
+  top: 375px;
+  left: 110px;
+}
+
+/* 별 아이콘 */
+.cafedetail-star-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 373px;
+  left: 18px;
+}
+
+/* 하트 아이콘 */
+.cafedetail-heart-icon {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: 329px;
+  left: 298px;
+}
+
+/* 공유 아이콘 */
+.cafedetail-share-icon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 331px;
+  left: 337px;
+}
+
+/* 라인 */
+.cafedetail-line1 {
+  position: absolute;
+  height: 2px;
+  width: 354px;
+  background-color: #674D42;
+  left: 18px;
+  top: 413.11px;
+}
+
+.cafedetail-line2 {
+  position: absolute;
+  height: 2px;
+  width: 354px;
+  background-color: #B5B5B5;
+  left: 18px;
+  top: 468.11px;
+}
+
+/* 섹션 선택 */
+.cafe-detail-header {
+  display: flex;
+  align-items: center;
+  padding: 423px 18px 20px;
+}
+
+.cafe-detail-tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* 탭 스타일 (선택되지 않은 탭) */
+.cafe-detail-tabs span {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 0;
+  color: #878787; 
+  flex: 1;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* 활성화된 탭 스타일 */
+.cafe-detail-tabs .active-tab {
+  color: #000000; 
+  border-bottom: 2px solid #674D42; 
+  z-index: 100;
+}

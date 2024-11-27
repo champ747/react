@@ -1,0 +1,848 @@
+/* 회원가입 화면 */
+.signup-container {
+    position: relative;
+    width: 390px;
+    height: 925px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Cafe24 Dongdong'
+}
+  
+/* Cafe ChuChu 로고 */
+.signuppage-logo {
+    position: absolute;
+    width: 160px;
+    height: 68px;
+    left: 115px;
+    top: 25px;
+    cursor: pointer;
+}
+
+/* 오류 메시지 스타일 */
+.error-message {
+    position: fixed; /* 화면에 고정 */
+    top: 0px;
+    left: 50%;
+    transform: translateX(-100%);
+    color: #FF3B30; 
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 1000;
+    margin: 0px;
+    white-space: nowrap;
+}  
+  
+/* 입력 폼 라벨 */
+.text-id {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 110px;
+    margin: 0;
+}
+
+.text-password {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 187px;
+    margin: 0;
+}
+
+.text-passwordcheck {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 264px;
+    margin: 0;
+}
+
+.text-name {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 341px;
+    margin: 0;
+}
+
+.text-gender {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 227px;
+    top: 341px;
+    margin: 0;
+}
+
+.text-phonenumber {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 418px;
+    margin: 0;
+}
+
+.text-email {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 495px;
+    margin: 0;
+}
+
+.text-cafe_preference {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 572px;
+    margin: 0;
+}
+
+.text-1 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 613px;
+    margin: 0;
+}
+
+.text-2 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 200px;
+    top: 613px;
+    margin: 0;
+}
+
+.text-3 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 660px;
+    margin: 0;
+}
+
+.text-4 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 200px;
+    top: 660px;
+    margin: 0;
+}
+
+.text-5 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 28px;
+    top: 706px;
+    margin: 0;
+}
+
+.text-6 {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    left: 200px;
+    top: 706px;
+    margin: 0;
+}
+
+/* 입력 폼 */
+.input-box_id {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 334px;
+    left: 28px;
+    top: 136px;
+}
+
+.input-box_password {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 334px;
+    left: 28px;
+    top: 213px;
+}
+
+.input-box_passwordcheck {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 334px;
+    left: 28px;
+    top: 290px;
+    z-index: 1;
+}
+
+.input-box_name {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 173px;
+    left: 28px;
+    top: 367px;
+}
+
+.input-box_phonenumber {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 334px;
+    left: 28px;
+    top: 444px;
+}
+
+.input-box_email {
+    position: absolute;
+    display: block;
+    height: 37px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box; 
+    font-family: 'Cafe24 Dongdong';
+    color: #878787;
+    width: 334px;
+    left: 28px;
+    top: 521px;
+}
+
+/* 중복확인 */
+.check-button {
+    position: absolute;
+    display: block;
+    width: 98px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center; 
+    top: 136px;
+    left: 264px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+}
+
+/* 중복 아이디 안내 */
+.check-duplicate {
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Cafe24 Dongdong';
+    color: #FF3B30;
+    left: 129px;
+    top: 116px;
+    margin: 0;
+}
+
+/* 중복확인 완료 */
+.check-complete {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #674D42;
+    left: 271px;
+    top: 142px;
+    margin: 0;
+}
+
+.check-complete_icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 336px;
+    top: 147px;
+}
+
+/* 비밀번호 확인 아이콘 */
+.password_check-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 326px;
+    top: 296px;
+    z-index: 99;
+}
+
+/* 남여 아이콘 */
+.male-icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 257px;
+    top: 375px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.female-icon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 328px;
+    top: 375px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* 전화번호 인증 */
+.phonecheck-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center; 
+    top: 521px;
+    left: 299px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+}
+
+/* 인증번호 발송 */
+.phonecheck-complete {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #674D42;
+    left: 301px;
+    top: 527px;
+    margin: 0;
+}
+
+.phonecheck-complete_icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 336px;
+    top: 532px;
+}
+
+/* 인증번호 확인 */
+.certifycheck-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center; 
+    top: 572px;
+    left: 299px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+}
+
+/* 잘못된 인증번호 안내 */
+.wrong-certify_number {
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Cafe24 Dongdong';
+    color: #FF3B30;
+    left: 160px;
+    top: 609px;
+    margin: 0;
+}
+
+/* 인증번호 확인 완료 */
+.certifycheck-complete {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #674D42;
+    left: 301px;
+    top: 578px;
+    margin: 0;
+}
+
+.phonecheck-complete_icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 336px;
+    top: 583px;
+}
+
+/* 선택 폼(선택 전) */
+.male-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 367px;
+    left: 227px;
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+    z-index: 1;
+}
+
+.male-button_span {
+    position: absolute;
+    font-size: 20px; 
+    color: #878787;
+    top: 374px;
+    left: 238px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 99;
+    cursor: pointer;
+}
+    
+.female-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 367px;
+    left: 299px;
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+    z-index: 1;
+}
+
+.female-button_span {
+    position: absolute;
+    font-size: 20px; 
+    color: #878787;
+    top: 375px;
+    left: 311px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 99;
+    cursor: pointer;
+}
+
+.job_O-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #878787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 70px;
+    font-family: 'Cafe24 Dongdong';
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+}
+
+.job_X-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #878787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 170px;
+    font-family: 'Cafe24 Dongdong';
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+}
+
+.job_student-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #878787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 272px;
+    font-family: 'Cafe24 Dongdong';
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+}
+
+.preference_c-button{
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #878787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 707px;
+    left: 170px;
+    font-family: 'Cafe24 Dongdong';
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+}
+
+.preference_m-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #878787;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 707px;
+    left: 272px;
+    font-family: 'Cafe24 Dongdong';
+    background: #FFFFFF; 
+    padding: 0;
+    border: 1px solid #B5B5B5;
+    box-sizing: border-box; 
+}
+
+/* 선택 폼(선택 후) */
+.select-male-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 367px;
+    left: 227px;
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+    z-index: 1;
+}
+
+.select-male-button_span {
+    position: absolute;
+    font-size: 20px; 
+    color: #FFFFFF;
+    top: 374px;
+    left: 238px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 99;
+}
+    
+.select-female-button {
+    position: absolute;
+    display: block;
+    width: 63px; 
+    height: 37px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 367px;
+    left: 299px;
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+    z-index: 1;
+}
+
+.select-female-button_span {
+    position: absolute;
+    font-size: 20px; 
+    color: #FFFFFF;
+    top: 375px;
+    left: 311px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 99;
+}
+
+.select-job_O-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 70px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+}
+
+.select-job_X-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 170px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+}
+
+.select-job_student-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 655px;
+    left: 272px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+}
+
+.select-preference_c-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 707px;
+    left: 170px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+}
+
+.select-preference_m-button {
+    position: absolute;
+    display: block;
+    width: 90px; 
+    height: 37px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    top: 707px;
+    left: 272px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+    padding: 0;
+    border: 1px solid #674D42;
+    box-sizing: border-box; 
+}
+
+/* 회원가입 하기 버튼 */
+.signup-button_X {
+    position: absolute;
+    display: block;
+    width: 334px; 
+    height: 60px; 
+    font-size: 25px; 
+    color: #674D42;
+    background: #FFFFFF; 
+    border: 2px solid #674D42;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center; 
+    top: 855px;
+    left: 28px;
+    font-family: 'Cafe24 Dongdong';
+}
+
+.signup-button_O {
+    position: absolute;
+    display: block;
+    width: 334px; 
+    height: 60px; 
+    font-size: 25px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center; 
+    top: 855px;
+    left: 28px;
+    font-family: 'Cafe24 Dongdong';
+    background: #674D42; 
+}
+
+/* 선호하는 키워드 순위 랭킹 박스&키워드 디자인 */
+.ranking-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    column-gap: 44px;
+    margin: 0px 50px;
+    padding-top: 606px;
+}
+  
+.ranking-slot {
+    height: 37px;
+    width: 129px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    color: #674D42;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+  
+.ranking-slot.filled {
+    background-color: #674D42;
+    color: #FFFFFF;
+}
+  
+.signup-keyword_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 10px;
+    margin: 15px 28px;
+}
+  
+.signup-keyword_button {
+    padding: 5px 10px;
+    border: 1px solid #674D42;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #674D42;
+    font-size: 20px;
+    font-family: 'Cafe24 Dongdong';
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.signup-keyword_button.selected {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    cursor:default;
+}

@@ -1,0 +1,190 @@
+/* 로그인 화면 */
+.login-container {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* Cafe ChuChu 로고 */
+.loginpage-logo {
+    position: absolute;
+    width: 195.32px;
+    height: 83.1px;
+    left: 97px;
+    top: 96px;
+}
+
+/* 로그인 타이틀 */
+.login-title {
+    position: absolute;
+    left: 154px;
+    top: 211px;
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Pretendard';
+    margin: 0;
+}
+
+/* 입력 폼 */
+.input-label_1 {
+    position: absolute;
+    display: block;
+    width: 311px;
+    height: 60px; 
+    top: 281px;
+    left: 40px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box; 
+    font-family: 'Noto Sans KR';
+    color: #878787;
+}
+
+.input-label_2 {
+    position: absolute;
+    display: block;
+    width: 311px;
+    height: 60px; 
+    top: 356px;
+    left: 40px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box; 
+    font-family: 'Noto Sans KR';
+    color: #878787;
+}
+
+/* 버튼 스타일(공통) */
+.login-button {
+    position: absolute;
+    display: block;
+    width: 311px; 
+    height: 60px; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    font-weight: 700;
+    text-align: center; 
+}
+
+/* 로그인 버튼 */
+.login-button.login {
+    top: 431px;
+    left: 40px;
+    background: #674D42; 
+}
+
+/* 네이버로 로그인 */
+.login-button.naver {
+    top: 568px;
+    left: 40px;
+    background: #12CD30; 
+    justify-content: center; 
+    padding-left: 43px; 
+}
+
+/* 카카오톡으로 로그인 */
+.login-button.kakao {
+    top: 643px;
+    left: 40px;
+    background: #FFE145; 
+    justify-content: center; 
+    padding-left: 48.88px; 
+}
+
+/* 링크 스타일 */
+.link_1 {
+    position: absolute;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none; 
+    left: 80px;
+    top: 506px;
+}
+
+.link_2 {
+    position: absolute;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none; 
+    left: 158px;
+    top: 506px;
+}
+
+.link_3 {
+    position: absolute;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none; 
+    left: 172px;
+    top: 506px;
+}
+
+.login-line_1 {
+    position: absolute;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    width: 1px;
+    height: 11px;
+    background: #B5B5B5;
+    left: 149px;
+    top: 509px;
+}
+
+.login-line_2 {
+    position: absolute;
+    font-family: 'Pretendard';
+    font-size: 13px;
+    width: 1px;
+    height: 11px;
+    background: #B5B5B5;
+    left: 237px;
+    top: 509px;
+}
+
+/* 아이콘 */
+.icon {
+    position: absolute;
+    left: 20px;
+}
+
+.icon.naver {
+    width: 18px;
+    height: 18px;
+    left: 25px;
+}
+
+.icon.kakao {
+    width: 28.88px; 
+    height: 24.93px;
+}
+
+/* 오류 메시지 */
+.loginpage-error-message {
+    position: fixed; /* 화면에 고정 */
+    top: 0px;
+    left: 50%;
+    transform: translateX(-70%);
+    color: #FF3B30; 
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Cafe24 Dongdong';
+    z-index: 1000;
+    margin: 0px;
+    white-space: nowrap;
+}
